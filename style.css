@@ -1,0 +1,273 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(245, 243, 247);
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+.background1 {
+    background-image:linear-gradient(0deg, rgba(136,56,255,1) 0%, rgba(233,66,255,1) 100%);
+    width: 200px;
+    height: 250px;
+    border-radius: 0px 0px 100px 100px;
+    position: fixed;
+    z-index: -1;
+    top: 0px;
+    left: -100px;
+
+}
+
+.background2 {
+    width: 200px;
+    height: 350px;
+    border-radius: 100px 100px 0px 0px;
+    position: fixed;
+    z-index: -1;
+    right: -100px;
+    bottom: 0px;
+    background-color: rgba(146, 65, 200, 0.075);
+}
+
+.part1 {
+    width: 300px;
+    margin: auto;
+    margin-top: 15%;
+    background-color:white;
+    padding: 5px;
+    border-radius: 30px;
+    box-shadow: 13px 30px 83px 0px rgba(0,0,0,0.31);
+-webkit-box-shadow: 13px 30px 83px 0px rgba(0,0,0,0.31);
+-moz-box-shadow: 13px 30px 83px 0px rgba(0,0,0,0.31);
+
+}
+
+.inner {
+    width: 95%;
+    background-color: rgb(245, 243, 247);
+    padding-bottom: 5px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+
+header {
+    background-image: linear-gradient(90deg, rgba(136,56,255,1) 0%, rgba(233,66,255,1) 100%);
+    border-radius: 20px 20px 10px 10px;
+}
+
+.boxer {
+    position: relative;
+    width: 50%;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    margin: auto;
+    top: -10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+
+.noflex {
+    margin-left: -45px;
+}
+
+.name {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.status {
+    margin-top: 0;
+    font-size: 12px;
+}
+
+ul {
+    font-size: 8px;
+    line-height: 5px;
+}
+
+
+.samuel {
+    width: 30px;
+    height: 30px;
+    border-radius: 36px;
+    border: 1px solid white;
+    margin-left: -45px;
+}
+
+.chat-left, .chat-right {
+    width: 60%;
+    padding: 6px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+.chat-left {
+    color: rgb(146, 65, 200);
+    background-color: rgba(146, 65, 200, 0.11);
+    border-radius: 12px 12px 12px 5px;
+    margin-left: 8px;
+}
+
+.chat-right {
+    margin-left: auto;
+    border-radius: 12px 12px 5px 12px;
+    margin-right: 8px;
+    background-color: white;
+}
+
+.small-msg {
+    width: 10em;
+    padding: none;
+}
+
+.dogImages {
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+    background-color: transparent;
+}
+
+img {
+    width: 50px;
+    border-radius: 10px;
+}
+
+.charges {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    background-image:linear-gradient(-90deg, rgba(136,56,255,1) 0%, rgba(233,66,255,1) 100%);
+    color: white;
+    border-radius: 8px 8px 8px 4px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border: 1px dotted white;
+    border-radius: 20px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.msg {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+.msg input {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex: 1;
+    border-radius: 20px;
+    height: 35px;
+    border: none;
+}
+
+.msg button {
+    width: 30px;
+    height: 30px;
+    margin-left: -35px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(62, 39, 83);
+    color: white;
+    font-size: bold;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+.part2 {
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.heading {
+    text-align: center;
+    color: rgb(62, 39, 83);
+}
+
+.description {
+    margin-top: 3%;
+    text-align: center;
+    line-height: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        display: flex;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+    }
+
+    .part1, .part2 {
+        margin-top: 5%;
+    }
+
+    .part2 {
+        margin-left: 10%;
+    }
+
+    .background1, .background2 {
+        width: 350px;
+        height: 450px;
+    }
+
+    .background1 {
+        border-radius: 0px 0px 50% 50%;
+    }
+
+    .background2 {
+        border-radius: 50% 50% 0px 0px;
+    }
+
+    .heading, .description {
+        text-align: left;
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
